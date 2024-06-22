@@ -1,24 +1,16 @@
 {
-    // Use IntelliSense to learn about possible Node.js debug attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Jest Tests",
-            "type": "node",
-            "request": "launch",
-            "runtimeArgs": [
-                "--inspect-brk",
-                "./node_modules/jest/bin/jest.js",
-                "-i",
-                "--env",
-                "jest-environment-node-debug"
-            ],
-            "cwd": "${workspaceRoot}",
-            "protocol": "inspector",
-            "console": "integratedTerminal",
-            "sourceMaps": true
-        }
-    ]
+	// 使用 IntelliSense 了解相关属性。
+	// 悬停以查看现有属性的描述。
+	// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "启动程序",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}/test/index.cjs",
+			"outFiles": ["${workspaceFolder}/**/*.js"]
+		}
+	]
 }
