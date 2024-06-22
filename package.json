@@ -1,15 +1,14 @@
 {
-  "name": "svg-captcha",
+  "name": "@kuankuan/more-complex-image-captcha",
   "version": "1.4.0",
-  "description": "generate svg captcha in node.js or express.js",
+  "description": "Used to generate more complex image captchas",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "lint": "xo"
+    "lint": "eslint --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steambap/svg-captcha.git"
+    "url": "git+https://github.com/kuankuan2007/more-complex-image-captcha.git"
   },
   "keywords": [
     "captcha",
@@ -19,35 +18,23 @@
     "captcha alternative"
   ],
   "author": {
-    "name": "Weilin Shi",
-    "email": "934587911@qq.com"
+    "name": "kuankuan",
+    "email": "2163826131@qq.com"
   },
   "engines": {
     "node": ">=4.x"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/steambap/svg-captcha/issues"
+    "url": "https://github.com/kuankuan2007/more-complex-image-captcha/issues"
   },
-  "homepage": "https://github.com/steambap/svg-captcha#readme",
+  "homepage": "https://github.com/kuankuan2007/more-complex-image-captcha#readme",
   "dependencies": {
     "opentype.js": "^0.7.3"
   },
   "devDependencies": {
-    "jest": "^21.1.0",
-    "jest-environment-node-debug": "^2.0.0",
-    "xo": "^0.18.2"
-  },
-  "xo": {
-    "esnext": true,
-    "envs": [
-      "jest"
-    ],
-    "rules": {
-      "linebreak-style": [
-        0
-      ]
-    }
+    "@kuankuan/eslint-2024": "^1.0.2",
+    "eslint": "^9.5.0"
   },
   "typings": "index.d.ts",
   "files": [
