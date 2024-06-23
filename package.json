@@ -1,6 +1,6 @@
 {
   "name": "@kuankuan/more-complex-image-captcha",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Used to generate more complex image captchas",
   "main": "dist/index.js",
   "scripts": {

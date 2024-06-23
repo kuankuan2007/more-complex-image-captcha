@@ -205,9 +205,9 @@ export const create = createSVG;
 export function createImage(
   options: ConfigObject & {
     noisePoint?: {
-      mean: number;
-      sigma: number;
-      enable: boolean;
+      mean?: number;
+      sigma?: number;
+      enable?: boolean;
     };
   }
 ) {
