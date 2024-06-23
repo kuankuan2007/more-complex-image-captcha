@@ -1,8 +1,8 @@
 {
   "name": "@kuankuan/more-complex-image-captcha",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "description": "Used to generate more complex image captchas",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint --fix"
   },
@@ -15,7 +15,11 @@
     "svg",
     "node captcha",
     "captcha generator",
-    "captcha alternative"
+    "captcha alternative",
+    "noise",
+    "image",
+    "image",
+    "sharp"
   ],
   "author": {
     "name": "kuankuan",
@@ -30,17 +34,23 @@
   },
   "homepage": "https://github.com/kuankuan2007/more-complex-image-captcha#readme",
   "dependencies": {
-    "opentype.js": "^0.7.3"
+    "color": "^4.2.3",
+    "fast-xml-parser": "^4.4.0",
+    "opentype.js": "^0.7.3",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@kuankuan/eslint-2024": "^1.0.2",
+    "@types/color": "^3.0.6",
+    "@types/node": "^20.14.8",
+    "@types/opentype.js": "^1.3.8",
     "eslint": "^9.5.0"
   },
-  "typings": "index.d.ts",
+  "typings": "dist/index.d.ts",
   "files": [
     "fonts/*",
-    "lib/*",
-    "index.d.ts",
+    "dist/*",
     "*.md"
-  ]
+  ],
+  "type": "module"
 }
